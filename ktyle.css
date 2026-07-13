@@ -1,4 +1,5 @@
-/* Reset & Base */
+
+    /* Reset & Base */
     * {
       margin: 0;
       padding: 0;
@@ -720,7 +721,7 @@
       }
     }
 
-    /* ========== STUDENT LOGIN MODAL - UPDATED ========== */
+    /* Student Login Modal - Fully Animated */
     .login-modal-overlay {
       position: fixed;
       top: 0;
@@ -973,7 +974,6 @@
     .login-footer-links a {
       color: #1e5a6f;
       text-decoration: none;
-      cursor: pointer;
     }
 
     .login-footer-links a:hover {
@@ -983,66 +983,4 @@
     .student-login-trigger {
       cursor: pointer;
       transition: all 0.2s;
-    }
-
-    /* ========== REGISTER MODAL ========== */
-    .register-modal-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.7);
-      backdrop-filter: blur(5px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 99999;
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.3s ease;
-    }
-
-    .register-modal-overlay.active {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .register-modal {
-      background: linear-gradient(145deg, #ffffff, #f8fafc);
-      border-radius: 2rem;
-      width: 90%;
-      max-width: 420px;
-      padding: 2rem 1.8rem;
-      position: relative;
-      transform: scale(0.7);
-      transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-      box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
-      border: 1px solid rgba(245, 176, 66, 0.3);
-    }
-
-    .register-modal-overlay.active .register-modal {
-      transform: scale(1);
-    }
-
-    .register-modal .modal-close {
-      position: absolute;
-      top: 15px;
-      right: 20px;
-      font-size: 1.5rem;
-      cursor: pointer;
-      color: #94a3b8;
-      transition: all 0.2s;
-      width: 30px;
-      height: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-    }
-
-    .register-modal .modal-close:hover {
-      background: #fee2e2;
-      color: #ef4444;
-      transform: rotate(90deg);
     }
